@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(../fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  background-color: hsl(225, 100%, 98%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+}
+
+.container{
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  font-family: RedHatDisplay;
+}
+
+.card{
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 400px;
+  background-color: white;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.info{
+  display: grid;
+  padding: 1.5rem 2rem;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.info h2{
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.info p{
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.info button{
+  width: 100%;
+  font-weight: 700;
+}
+
+.info .pricing{
+  display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1em;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.pricing img{
+  width: 3em;
+  height: 3em;
+  margin-right: 0.75em;
+}
+
+.pricing div{
+  margin-right: auto;
+}
+
+.pricing div h3{
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.pricing .change{
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.pricing .change:hover{
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+.info .proceed{
+  border-radius: 0.5rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1.10em;
+  border: none;
+}
+
+.info .proceed:hover{
+  background-color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+.info .cancel{
+  border: none;
+  padding: 1.10em;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+}
+
+.info .cancel:hover{
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  body{
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .card{
+    margin: 2rem;
+  }
+
+  .info .pricing{
+    font-size: 0.75rem;
+  }
+}
