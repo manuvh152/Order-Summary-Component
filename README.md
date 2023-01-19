@@ -56,5 +56,5 @@ I still have problems with the CSS optimization though I have gotten better.
 
 ## Author
 
-- Website - [manuvh152](https://github.com/manuvh152)
+- Github - [manuvh152](https://github.com/manuvh152)
 - Frontend Mentor - [manuvh152](https://www.frontendmentor.io/profile/manuvh152)
